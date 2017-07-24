@@ -1,0 +1,20 @@
+{
+  "name": "web-estimote-stickers",
+  "version": "1.0.0",
+  "description": "Estimote stickers and Raspberry Pi 3 on the web",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sudo node server.js"
+  },
+  "author": "Nicola Dimatteo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "http-server": "^0.10.0",
+    "socket.io": "^2.0.3",
+    "noble": "^1.8.1"
+  },
+  "license": "ISC",
+  "repository": "webnicola/web-estimote-stickers"
+}
