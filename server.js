@@ -38,9 +38,9 @@ io.sockets.on('connection', socket => {
     var nearablePacket = estimoteNearable.packet(data);
     if (nearablePacket) {
       // 1 estimote stickers == 1916ebf05bf2c13f
-      if(nearablePacket.nearableId == '1916ebf05bf2c13f'){
-        console.log(nearablePacket.isMoving);
-        socket.emit('isMoving', {"value": nearablePacket.isMoving});
+      if(nearablePacket.nearableId == '1916ebf05bf2c13f' || nearablePacket.nearableId == '70d4d79ad2f3cd43'){
+        console.log(nearablePacket);
+        socket.emit('isMoving', {nearablePacket});
       }
     }
   });
