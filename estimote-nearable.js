@@ -37,8 +37,7 @@ var packet = function(data) { // data is a 0-indexed byte array/buffer
 
   // byte 15, 7th bit = is the nearable moving or not
   
-  //var isMoving = (data.readUInt8(15) & 0b01000000) == 1;
-  var isMoving = (data.readUInt8(15) & 0x40) !== 0;
+  var isMoving = (data.readUInt8(15) & 0b01000000) != 0;
   
   //console.log(data.readUInt8(15), 0b01000000);
 
